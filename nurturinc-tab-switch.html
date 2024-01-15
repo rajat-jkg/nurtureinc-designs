@@ -1,0 +1,108 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #ivy-prep-text{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button id="unv-path-button">University Program</button> <button id="ivy-prep-button" >Ivy Prep</button>
+    <p id="unv-path-text"><a class="elementor-button"></a>University Pathway</a></p>
+    <p id="ivy-prep-text"> <a class="elementor-button">Ivy Prepr program</a></p>
+
+
+
+    <script>
+        ipButton = document.getElementById('ivy-prep-button');
+        ipButtonInner = ipButton.getElementsByClassName('elementor-button');
+        upButton = document.getElementById('unv-path-button');
+        upButtonInner = upButton.getElementsByClassName('elementor-button');
+        ipButton.addEventListener('click', () => { 
+            document.getElementById('unv-path-text').style.display='none';
+            document.getElementById('ivy-prep-text').style.display= 'block';
+            upButton.style.border = '1px solid black';
+            upButton.style.backgroundColor = '#FFFFFF';
+            upButton.style.color = '#000000';
+            ipButton.style.color = '#FFFFFF';
+            ipButton.style.backgroundColor = '#000000';
+            ipButton.style.border = '0px';
+        }
+        );
+        upButton.addEventListener('click', ()=>{
+            document.getElementById('unv-path-text').style.display='block';
+            document.getElementById('ivy-prep-text').style.display= 'none';
+            ipButton.style.border = '1px solid black';
+            ipButton.style.backgroundColor = '#FFFFFF';
+            ipButton.style.color = '#000000';
+            upButton.style.color = '#FFFFFF';
+            upButton.style.backgroundColor = '#000000';
+            upButton.style.border = '0px';
+
+        })
+    </script>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #ivy-prep-text{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="unv-path-button">  <a class="elementor-button">University Program </a></div> <div id="ivy-prep-button" > <a class="elementor-button">Ivy Prep</a></div>
+    <p id="unv-path-text">University Pathway</p>
+    <p id="ivy-prep-text">Ivy Prepr program</p>
+
+
+
+    <script>
+        ipButton = document.getElementById('ivy-prep-button');
+        upButton = document.getElementById('unv-path-button');
+
+        ipButtonQuery = document.querySelector('#ivy-prep-button');
+        ipButtonInner = ipButtonQuery.querySelector('.elementor-button');
+        upButtonQuery = document.querySelector('#unv-path-button');
+        upButtonInner = upButtonQuery.querySelector('.elementor-button');
+
+
+
+        ipButton.addEventListener('click', () => { 
+            document.getElementById('unv-path-text').style.display='none';
+            document.getElementById('ivy-prep-text').style.display= 'block';
+            upButtonInner.style.border = '1px solid black';
+            upButtonInner.style.backgroundColor = '#FFFFFF';
+            upButtonInner.style.color = '#000000';
+            ipButtonInner.style.color = '#FFFFFF';
+            ipButtonInner.style.backgroundColor = '#000000';
+            ipButtonInner.style.border = '0px';
+        }
+        );
+
+        upButton.addEventListener('click', ()=>{
+            document.getElementById('unv-path-text').style.display='block';
+            document.getElementById('ivy-prep-text').style.display= 'none';
+            ipButtonInner.style.border = '1px solid black';
+            ipButtonInner.style.backgroundColor = '#FFFFFF';
+            ipButtonInner.style.color = '#000000';
+            upButtonInner.style.color = '#FFFFFF';
+            upButtonInner.style.backgroundColor = '#000000';
+            upButtonInner.style.border = '0px';
+
+        });
+    </script>
+</body>
+</html>

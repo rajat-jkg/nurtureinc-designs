@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<style>
+    .program-name-heading{
+        font-family: 'Helvetica';
+        font-size: 28px;
+        margin-bottom: 80px;
+    }
+    .program-text{
+        
+        font-family: 'Source Sans Pro';
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .arrow-icon{
+        height: 25px;
+        width: 25px;
+        border-radius: 35px;
+        padding: 15px;
+    }
+    /*horizontal row */
+    .program-horizontal-inner{
+        display: inline-flex;
+        overflow: hidden;
+    }
+
+    /* card item */
+    .program-horizontal-item{
+        margin-right: 60px;
+        width: 400px;
+        border-radius: 15px;
+        padding: 46px;
+    }
+
+    /* first-box */
+    .program-horizontal-item#unvp{
+        background-color: black;
+        color: white;
+    }
+    
+    .program-horizontal-item#unvp .arrow-icon{
+        background-color: #D9D9D9;
+        
+    }
+
+
+
+    /* second box */
+
+    .program-horizontal-item#ivp{
+        background-color: #FFE85F;
+    }
+
+    .program-horizontal-item#ivp .arrow-icon{
+        background-color: #000;
+    }
+
+
+    /* third box */
+    .program-horizontal-item#pb{
+        background-color: #FFE8D5;
+    }
+
+    .program-horizontal-item#pb .arrow-icon{
+        background-color: #000;
+    }
+    /* inner flex-grid */
+    .program-horizontal-item .flex-grid{
+        width: 100%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    .program-horizontal-item:first-child{
+        margin-left: 80px;
+    }
+</style>
+
+<div class="proram-horizontal">
+    <div class="program-horizontal-inner">
+
+        <div class="program-horizontal-item" id="unvp">
+            <h3 class="program-name-heading">
+                University Pathway
+            </h3>
+            <div class="flex-grid">
+                <div class="arrow-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                        <path d="M24.816 1.24359C24.816 0.691307 24.3683 0.243592 23.816 0.243592L14.816 0.243592C14.2637 0.243592 13.816 0.691307 13.816 1.24359C13.816 1.79588 14.2637 2.24359 14.816 2.24359H22.816V10.2436C22.816 10.7959 23.2637 11.2436 23.816 11.2436C24.3683 11.2436 24.816 10.7959 24.816 10.2436L24.816 1.24359ZM1.58406 24.8897L24.5231 1.9507L23.1089 0.536485L0.169846 23.4755L1.58406 24.8897Z" fill="black"/>
+                    </svg>
+                </div>
+                <div class="program-text">
+                    <p>Our assessments are designed <br>
+                        to dig deep the surface that <br>
+                        helps us uncover your true</p>
+                </div>
+            </div>
+        </div>
+        <div class="program-horizontal-item" id="ivp">
+            <h3 class="program-name-heading">
+                Ivy Prep
+            </h3>
+            <div class="flex-grid">
+                <div class="arrow-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                        <path d="M24.816 1.24359C24.816 0.691307 24.3683 0.243592 23.816 0.243592L14.816 0.243592C14.2637 0.243592 13.816 0.691307 13.816 1.24359C13.816 1.79588 14.2637 2.24359 14.816 2.24359H22.816V10.2436C22.816 10.7959 23.2637 11.2436 23.816 11.2436C24.3683 11.2436 24.816 10.7959 24.816 10.2436L24.816 1.24359ZM1.58406 24.8897L24.5231 1.9507L23.1089 0.536485L0.169846 23.4755L1.58406 24.8897Z" fill="white"/>
+                    </svg>
+                </div>
+                <div class="program-text">
+                    <p>Our assessments are designed <br>
+                    to dig deep the surface that <br>
+                    helps us uncover your true</p>
+                </div>
+            </div>
+        </div>
+        <div class="program-horizontal-item" id="pb">
+            <h3 class="program-name-heading">
+                Profile Builder
+            </h3>
+            <div class="flex-grid">
+                <div class="arrow-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                        <path d="M24.816 1.24359C24.816 0.691307 24.3683 0.243592 23.816 0.243592L14.816 0.243592C14.2637 0.243592 13.816 0.691307 13.816 1.24359C13.816 1.79588 14.2637 2.24359 14.816 2.24359H22.816V10.2436C22.816 10.7959 23.2637 11.2436 23.816 11.2436C24.3683 11.2436 24.816 10.7959 24.816 10.2436L24.816 1.24359ZM1.58406 24.8897L24.5231 1.9507L23.1089 0.536485L0.169846 23.4755L1.58406 24.8897Z" fill="white"/>
+                    </svg>
+                </div>
+                <div class="program-text">
+                    <p>Our assessments are designed <br>
+                    to dig deep the surface that <br>
+                    helps us uncover your true</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

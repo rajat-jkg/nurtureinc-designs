@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #uvp-button, #ivp-button, #pb-button{
+           
+           padding: 40px 15px;
+           border: 1px solid;
+            margin: 15px;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <style>
+        #uvp-button, #ivp-button, #pb-button{
+            cursor: pointer;
+        }
+        #ivp-text, #pb-text{
+            display: none;
+        }
+    </style>
+
+
+
+    <div id="uvp-button">
+        University Pathway
+    </div>
+    <div id="ivp-button">
+        Ivy Prep
+    </div>
+    <div id="pb-button">
+        Profile builder
+    </div>
+
+    <div id="uvp-text">
+        University Pathway
+    </div>
+    <div id="ivp-text">
+        Ivy Prep
+    </div>
+    <div id="pb-text">
+        Profile builder
+    </div>
+
+
+<script>
+    var universityPathB= document.querySelector('#uvp-button');
+    var ivyB= document.querySelector('#ivp-button');
+    var profileB= document.querySelector('#pb-button');
+
+    var universityPathText= document.querySelector('#uvp-text');
+    var ivyText= document.querySelector('#ivp-text');
+    var profileText= document.querySelector('#pb-text');
+
+
+    universityPathB.addEventListener('click',  ()=>{
+        universityPathText.style.display = 'block';
+        ivyText.style.display = 'none';
+        profileText.style.display = 'none';
+    });
+
+    ivyB.addEventListener('click', ()=>{
+        universityPathText.style.display = 'none';
+        ivyText.style.display = 'block';
+        profileText.style.display = 'none';
+    });
+
+    profileB.addEventListener('click', ()=>{
+        universityPathText.style.display = 'none';
+        ivyText.style.display = 'none';
+        profileText.style.display = 'block';
+    });
+</script>
+</body>
+</html>
