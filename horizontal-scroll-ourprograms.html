@@ -7,170 +7,215 @@
     <title>Document</title>
 </head>
 <body>
-<style>
-    .scroller-link{
-        text-decoration: none;
-    }
-    #program-horizontal{
-        padding: 150px 0;
-    }
-    .program-name-heading{
-        font-family: 'Helvetica';
-        font-size: 28px;
-        margin-bottom: 80px;
-    }
-    .program-text{
+    <div class="upper" style="height: 100vh;">
+
+    </div>
+    <style>
+        .scroller-link{
+            text-decoration: none;
+            transition: 600ms;
+            
+        }
+        #program-horizontal{
+            padding: 150px 0;
+        }
+        .program-name-heading{
+            font-family: 'Helvetica';
+            font-size: 28px;
+            margin-bottom: 65px;
+        }
+        .program-text{
+            
+            font-family: 'Source Sans Pro';
+            font-size: 18px;
+            font-weight: 400;
+        }
+        .arrow-icon{
+            transition: 600ms;
+            height: 45px;
+            width: 45px;
+            border-radius: 35px;
+            padding: 15px;
+            margin-left: -20px;
+            transform: scale(0.5);
+        }
         
-        font-family: 'Source Sans Pro';
-        font-size: 18px;
-        font-weight: 400;
-    }
-    .arrow-icon{
-        height: 25px;
-        width: 25px;
-        border-radius: 35px;
-        padding: 15px;
-    }
-    /*horizontal row */
-    .program-horizontal-inner{
-        display: inline-flex;
-        overflow: hidden;
-    }
-
-    /* card item */
-    .program-horizontal-item{
-        margin-right: 60px;
-        width: 400px;
-        border-radius: 15px;
-        padding: 46px;
-    }
-
-    /* first-box */
-    .program-horizontal-item#unvp{
-        background-color: black;
-        color: white;
-    }
+        /*horizontal row */
+        .program-horizontal-inner{
+            display: inline-flex;
+           
+        }
     
-    .program-horizontal-item#unvp .arrow-icon{
-        background-color: #D9D9D9;
+        /* card item */
+        .program-horizontal-item{
+            margin-right: 20px;
+            width: 420px;
+            border-radius: 15px;
+            padding: 30px 40px;
+            cursor: context-menu;
+        }
         
-    }
+        .program-horizontal-item:hover{
+            transform: scale(1.02);
+        }
+    
+        /* first-box */
+        .program-horizontal-item#unvp{
+            background-color: black;
+            color: white;
+        }
+        
+        .program-horizontal-item#unvp .arrow-icon{
+            background-color: #D9D9D9;
+        }
+    
+        
+    
+        /* second box */
+    
+        .program-horizontal-item#ivp{
+            background-color: #FFE85F;
+            color: black;
+        }
+    
+        .program-horizontal-item#ivp .arrow-icon{
+            background-color: #000;
+        }
+    
+    
+        /* third box */
+        .program-horizontal-item#pb{
+            background-color: #FFE8D5;
+            color: black;
+        }
+    
+        .program-horizontal-item#pb .arrow-icon{
+            background-color: #000;
+        }
+        /* inner flex-grid */
+        .program-horizontal-item .flex-grid{
+            width: 100%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
 
+        
+        .program-horizontal-item:first-child{
+            margin-left: 80px;
+        }
+        #unvp .program-name-heading{
+            color: white;
+        }
 
+        /*hover animation */
+        .arrow-icon:hover{
+            
+            
+            box-shadow: 0px 0px 20px rgba(226, 226, 226, 0.25);
+            cursor: pointer;
+        }
 
-    /* second box */
-
-    .program-horizontal-item#ivp{
-        background-color: #FFE85F;
-        color: black;
-    }
-
-    .program-horizontal-item#ivp .arrow-icon{
-        background-color: #000;
-    }
-
-
-    /* third box */
-    .program-horizontal-item#pb{
-        background-color: #FFE8D5;
-        color: black;
-    }
-
-    .program-horizontal-item#pb .arrow-icon{
-        background-color: #000;
-    }
-    /* inner flex-grid */
-    .program-horizontal-item .flex-grid{
-        width: 100%;
-        display: inline-flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-
-    .program-horizontal-item:first-child{
-        margin-left: 80px;
-    }
-</style>
-
-<div id="program-horizontal">
-    <div class="program-horizontal-inner">
-        <a href="#unvp-text" class="scroller-link">
-        <div class="program-horizontal-item" id="unvp">
-            <h3 class="program-name-heading">
-                University Pathway
-            </h3>
-            <div class="flex-grid">
-                <div class="arrow-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
-                        <path d="M24.816 1.24359C24.816 0.691307 24.3683 0.243592 23.816 0.243592L14.816 0.243592C14.2637 0.243592 13.816 0.691307 13.816 1.24359C13.816 1.79588 14.2637 2.24359 14.816 2.24359H22.816V10.2436C22.816 10.7959 23.2637 11.2436 23.816 11.2436C24.3683 11.2436 24.816 10.7959 24.816 10.2436L24.816 1.24359ZM1.58406 24.8897L24.5231 1.9507L23.1089 0.536485L0.169846 23.4755L1.58406 24.8897Z" fill="black"/>
-                    </svg>
+        .arrow-icon svg{
+            transition: 600ms;
+        }
+        .arrow-icon:hover svg{
+            transform: rotate(135deg);
+        }
+    </style>
+    
+    <div id="program-horizontal">
+        <div class="program-horizontal-inner">
+            <a href="#unvp-text" class="scroller-link">
+            <div class="program-horizontal-item" id="unvp">
+                <h3 class="program-name-heading">
+                    University Pathway
+                </h3>
+                <div class="flex-grid">
+                    <div class="arrow-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 25 25" fill="none">
+                            <path d="M24.816 1.24359C24.816 0.691307 24.3683 0.243592 23.816 0.243592L14.816 0.243592C14.2637 0.243592 13.816 0.691307 13.816 1.24359C13.816 1.79588 14.2637 2.24359 14.816 2.24359H22.816V10.2436C22.816 10.7959 23.2637 11.2436 23.816 11.2436C24.3683 11.2436 24.816 10.7959 24.816 10.2436L24.816 1.24359ZM1.58406 24.8897L24.5231 1.9507L23.1089 0.536485L0.169846 23.4755L1.58406 24.8897Z" fill="black"/>
+                        </svg>
+                    </div>
+                    <div class="program-text">
+                        <p>Our assessments are designed <br>
+                            to dig deep the surface that <br>
+                            helps us uncover your true</p>
+                    </div>
                 </div>
-                <div class="program-text">
-                    <p>Our assessments are designed <br>
+            </div>
+            </a>
+            <a href="#ivp-text" class="scroller-link">
+            <div class="program-horizontal-item" id="ivp">
+                <h3 class="program-name-heading">
+                    Ivy Prep
+                </h3>
+                <div class="flex-grid">
+                    <div class="arrow-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 25 25" fill="none">
+                            <path d="M24.816 1.24359C24.816 0.691307 24.3683 0.243592 23.816 0.243592L14.816 0.243592C14.2637 0.243592 13.816 0.691307 13.816 1.24359C13.816 1.79588 14.2637 2.24359 14.816 2.24359H22.816V10.2436C22.816 10.7959 23.2637 11.2436 23.816 11.2436C24.3683 11.2436 24.816 10.7959 24.816 10.2436L24.816 1.24359ZM1.58406 24.8897L24.5231 1.9507L23.1089 0.536485L0.169846 23.4755L1.58406 24.8897Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="program-text">
+                        <p>Our assessments are designed <br>
                         to dig deep the surface that <br>
                         helps us uncover your true</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        </a>
-        <a href="#ivp-text" class="scroller-link">
-        <div class="program-horizontal-item" id="ivp">
-            <h3 class="program-name-heading">
-                Ivy Prep
-            </h3>
-            <div class="flex-grid">
-                <div class="arrow-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
-                        <path d="M24.816 1.24359C24.816 0.691307 24.3683 0.243592 23.816 0.243592L14.816 0.243592C14.2637 0.243592 13.816 0.691307 13.816 1.24359C13.816 1.79588 14.2637 2.24359 14.816 2.24359H22.816V10.2436C22.816 10.7959 23.2637 11.2436 23.816 11.2436C24.3683 11.2436 24.816 10.7959 24.816 10.2436L24.816 1.24359ZM1.58406 24.8897L24.5231 1.9507L23.1089 0.536485L0.169846 23.4755L1.58406 24.8897Z" fill="white"/>
-                    </svg>
-                </div>
-                <div class="program-text">
-                    <p>Our assessments are designed <br>
-                    to dig deep the surface that <br>
-                    helps us uncover your true</p>
-                </div>
-            </div>
-        </div>
-        </a>
-        <a href="#pb-text" class="scroller-link">
-        <div class="program-horizontal-item" id="pb">
-            <h3 class="program-name-heading">
-                Profile Builder
-            </h3>
-            <div class="flex-grid">
-                <div class="arrow-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
-                        <path d="M24.816 1.24359C24.816 0.691307 24.3683 0.243592 23.816 0.243592L14.816 0.243592C14.2637 0.243592 13.816 0.691307 13.816 1.24359C13.816 1.79588 14.2637 2.24359 14.816 2.24359H22.816V10.2436C22.816 10.7959 23.2637 11.2436 23.816 11.2436C24.3683 11.2436 24.816 10.7959 24.816 10.2436L24.816 1.24359ZM1.58406 24.8897L24.5231 1.9507L23.1089 0.536485L0.169846 23.4755L1.58406 24.8897Z" fill="white"/>
-                    </svg>
-                </div>
-                <div class="program-text">
-                    <p>Our assessments are designed <br>
-                    to dig deep the surface that <br>
-                    helps us uncover your true</p>
+            </a>
+            <a href="#pb-text" class="scroller-link">
+            <div class="program-horizontal-item" id="pb">
+                <h3 class="program-name-heading">
+                    Profile Builder
+                </h3>
+                <div class="flex-grid">
+                    <div class="arrow-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 25 25" fill="none">
+                            <path d="M24.816 1.24359C24.816 0.691307 24.3683 0.243592 23.816 0.243592L14.816 0.243592C14.2637 0.243592 13.816 0.691307 13.816 1.24359C13.816 1.79588 14.2637 2.24359 14.816 2.24359H22.816V10.2436C22.816 10.7959 23.2637 11.2436 23.816 11.2436C24.3683 11.2436 24.816 10.7959 24.816 10.2436L24.816 1.24359ZM1.58406 24.8897L24.5231 1.9507L23.1089 0.536485L0.169846 23.4755L1.58406 24.8897Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <div class="program-text">
+                        <p>Our assessments are designed <br>
+                        to dig deep the surface that <br>
+                        helps us uncover your true</p>
+                    </div>
                 </div>
             </div>
+            </a>
         </div>
-        </a>
     </div>
-</div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://assets.codepen.io/16327/ScrollTrigger.min.js"></script>
+    <script>
+    let programs_box = gsap.utils.toArray(".program-horizontal-item");
+    let scroll_section = document.querySelector('#program-horizontal');
+    gsap.to(programs_box, {
+        xPercent: -100 * (programs_box.length-2.5),
+        ease: "sine.out",
+        scrollTrigger: {
+            trigger: scroll_section,
+            pin: true,
+            scrub:true,
+            snap: 1 / (programs_box.length - 1),
+            end: "+=" + scroll_section.offsetWidth
+        }
+    });
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
-<script src="https://assets.codepen.io/16327/ScrollTrigger.min.js"></script>
-<script>
-let programs_box = gsap.utils.toArray(".program-horizontal-item");
-let scroll_section = document.querySelector('#program-horizontal');
-gsap.to(programs_box, {
-    xPercent: -100 * (programs_box.length - 1),
-    ease: "sine.out",
-    scrollTrigger: {
-        trigger: scroll_section,
-        pin: true,
-        scrub:true,
-        snap: 1 / (programs_box.length - 1),
-        end: "+=" + scroll_section.offsetWidth
-    }
-});
-</script>
+    arrowIcon = gsap.utils.toArray(".arrow-icon");
+    gsap.to(arrowIcon, {
+        scale: 1.5,
+        x: 20,
+        ease: "sine.out",
+        scrollTrigger: {
+            trigger: document.querySelector('#program-horizontal-inner'),
+            duration: 1.5,
+            scrub:true,
+            
+        }
+    });
+    </script>
 </body>
 </html>
