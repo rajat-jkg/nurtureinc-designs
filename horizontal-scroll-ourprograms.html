@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href='https://fonts.googleapis.com/css?family=Source Sans Pro' rel='stylesheet'>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
 <style>
+    #program-horizontal{
+        padding: 150px 0;
+    }
     .program-name-heading{
         font-family: 'Helvetica';
         font-size: 28px;
@@ -84,7 +88,7 @@
     }
 </style>
 
-<div class="proram-horizontal">
+<div id="program-horizontal">
     <div class="program-horizontal-inner">
 
         <div class="program-horizontal-item" id="unvp">
@@ -141,5 +145,22 @@
     </div>
 </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+<script src="https://assets.codepen.io/16327/ScrollTrigger.min.js"></script>
+<script>
+let programs_box = gsap.utils.toArray(".program-horizontal-item");
+let scroll_section = document.querySelector('#program-horizontal');
+gsap.to(programs_box, {
+    xPercent: -100 * (programs_box.length - 1),
+    ease: "sine.out",
+    scrollTrigger: {
+        trigger: scroll_section,
+        pin: true,
+        scrub:true,
+        snap: 1 / (programs_box.length - 1),
+        end: "+=" + scroll_section.offsetWidth
+    }
+});
+</script>
 </body>
 </html>
