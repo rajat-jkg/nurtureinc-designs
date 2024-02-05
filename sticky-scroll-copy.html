@@ -19,256 +19,253 @@
     <div style="height: 50vh;"></div>
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <style>
-        /* container structure */
+<style>
+    /* container structure */
+    .sticky-scroll-container {
+        display: flex;
+        flex-direction: column;
+        padding: 0 150px;
+
+    }
+    .student-data-wrapper {
+        margin-top: 190px;
+    }
+    .sticky-scroll-container .inner-row {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: row;
+        scroll-snap-align: start;
+        column-gap: 3%;
+        margin-bottom: 15px;
+        padding-top: 150px;
+    }
+
+    .sticky-scroll-container .col1 {
+
+        width: 35%;
+    }
+
+    .sticky-scroll-container .col2 {
+
+        width: 62%;
+
+    }
+
+    .sticky-scroll-container .student-image {
+        position: sticky;
+        top: 100px;
+        width: 100%;
+        border-radius: 15px;
+    }
+
+
+    /* text styles */
+    .inner-heading {
+        font-family: 'Helvetica';
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    .inner-subheading {
+        font-family: 'Helvetica';
+        font-size: 24px;
+        font-weight: 700;
+        margin: 0;
+        line-height: 1.75;
+
+    }
+
+    .inner-text {
+        font-family: Helvetica, sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.75;
+        margin: 0;
+    }
+
+    /* testimonial styles */
+    .inner-testimonial {
+        border: solid 1px #E4E4E4;
+        border-radius: 6px;
+        padding: 20px;
+        margin-top: 120px;
+        margin-left: 10px;
+    }
+
+    .testimonial-quote {
+        color: #000;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        margin: 0 0 20px 0;
+    }
+
+    .inner-testimonial .testimonial-flex {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .inner-testimonial .testimonial-picture {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        margin-right: 20px;
+    }
+
+    .inner-testimonial .testimonial-name {
+        color: #000;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        margin: 5px 0;
+        padding: 0;
+    }
+
+    .inner-testimonial .testimonial-subtilte {
+        color: #666666;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+        margin: 5px 0;
+        padding: 0;
+    }
+
+   
+
+    /* tab view */
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
         .sticky-scroll-container {
-            display: flex;
-            flex-direction: column;
-            padding: 0 150px;
-
-        }
-        .student-data-wrapper {
-            margin-top: 190px;
-        }
-        .sticky-scroll-container .inner-row {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: row;
-            scroll-snap-align: start;
-            column-gap: 3%;
-            margin-bottom: 15px;
-            padding-top: 150px;
-        }
-
-        .sticky-scroll-container .col1 {
-
-            width: 35%;
-        }
-
-        .sticky-scroll-container .col2 {
-
-            width: 62%;
-
-        }
-
-        .sticky-scroll-container .student-image {
-            position: sticky;
-            top: 100px;
-            width: 100%;
-            border-radius: 15px;
+            padding: 0 50px;
         }
 
 
-        /* text styles */
-        .inner-heading {
-            font-family: 'Helvetica';
-            font-size: 32px;
-            font-weight: 700;
-        }
-
-        .inner-subheading {
-            font-family: 'Helvetica';
-            font-size: 24px;
-            font-weight: 700;
-            margin: 0;
-            line-height: 1.75;
-
-        }
-
-        .inner-text {
-            font-family: Helvetica, sans-serif;
-            font-size: 18px;
-            font-weight: 400;
-            line-height: 1.75;
-            margin: 0;
-        }
-
-        /* testimonial styles */
         .inner-testimonial {
-            border: solid 1px #E4E4E4;
-            border-radius: 6px;
-            padding: 20px;
-            margin-top: 120px;
-            margin-left: 10px;
+            margin-top: 50px;
+            margin-left: 0px;
         }
+    }
 
-        .testimonial-quote {
-            color: #000;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 1.5;
-            margin: 0 0 20px 0;
-        }
+</style>
 
-        .testimonial-flex {
-            display: flex;
-            flex-direction: row;
+<section class="sticky-scroll-container">
 
-        }
-
-        .testimonial-picture {
-            height: 40px;
-            width: 40px;
-            border-radius: 50%;
-            margin-right: 20px;
-        }
-
-        .testimonial-name {
-            color: #000;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 14px;
-            font-weight: 700;
-            margin: 5px 0;
-        }
-
-        .testimonial-subtilte {
-            color: #666666;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 12px;
-            margin: 5px 0;
-        }
-
-       
-
-        /* tab view */
-        @media only screen and (min-width: 768px) and (max-width: 1024px) {
-            .sticky-scroll-container {
-                padding: 0 50px;
-            }
-
-
-            .inner-testimonial {
-                margin-top: 50px;
-                margin-left: 0px;
-            }
-        }
-        /*hide on mobile*/
-        @media only screen and (max-width: 768px) {
-            .sticky-scroll-container {
-                display: none;
-            }
-        }
-    </style>
-
-    <section class="sticky-scroll-container">
-
-        <div class="inner-row">
-            <div class="col1">
-                <div class="student-data-wrapper" id="student-section-student-1">
-                    <!-- diva gandhi text -->
-                    <h2 class="inner-heading name-heading">Diva Gandhi</h2>
-                    <p class="inner-text">Aspiring - Business <br>
-                        Passions - Weight lifting and mental health</p>
-                    <h2 class="inner-heading ">What we did</h2>
-                    <h4 class="inner-subheading">Ivy Project</h4>
-                    <p class="inner-text"> Launched her own protein brand for women <br> Launched a wellness retreat
-                        venture
-                        for corporates</p>
-                    <div style="height: 20px;"></div>
-                    <h4 class="inner-subheading">Community Service</h4>
-                    <p class="inner-text">Stronger Together Against Bullying<br>
-                        Launched an anti-bullying campaign <br>
-                        that emphasizes building strength, both physical and<br>
-                        emotional</p>
-                    <div class="inner-testimonial">
-                        <p class="testimonial-quote">“I never knew my passions could be
-                            transformed into actual businesses
-                            and initiatives. My business mentor taught
-                            me real-life business skills which not only
-                            built my profile for uni but fulfilled my
-                            Dream of running a business as a high school <br>Student.”</p>
-                        <div class="testimonial-flex">
-                            <img src="https://nurtureinc.org/wp-content/uploads/2019/09/team7.jpg" alt=""
-                                class="testimonial-picture">
-                            <div class="testimonial-owner">
-                                <p class="testimonial-name">Diva Gandhi</p>
-                                <p class="testimonial-subtilte">Aspiring Business</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="student-data-wrapper" id="student-section-student-2">
-                    <!-- mayank aggarwal -->
-                    <h2 class="inner-heading">Mayak Agarwal </h2>
-                    <p class="inner-text">Aspiring - computer science
-                        <br>
-                        Passions - chess and pottery
-                    </p>
-                    <h2 class="inner-heading">What we did</h2>
-                    <h4 class="inner-subheading">University project</h4>
-                    <p class="inner-text"> Learned ML from nurtureinc Microsoft mentor
-                        <br> Developed AI-Powered Chess Tutor with the mentor
-                    </p>
-                    <div style="height: 20px;"></div>
-                    <h4 class="inner-subheading">Community Service</h4>
-                    <p class="inner-text">Clay to Craft <br>
-                        Taught underprivileged children artisanal pottery
-                        <br>
-                        to set up local stalls and make money
-                    </p>
-                    <div class="inner-testimonial">
-                        <p class="testimonial-quote">“I went to multiple consultants before nurtureinc and all of
-                            them told me they would do stellar essays and
-                            applications for me but I wasn’t sure
-                            what would they even put on it because I didn’t
-                            have any achievements or experiences?
-                            that’s when I found nurtureinc and I realised
-                            I needed exposure and skills, not someone to fill
-                            the application form. I wish I had joined earlier.”</p>
-                        <div class="testimonial-flex">
-                            <img src="https://nurtureinc.org/wp-content/uploads/2019/09/team7.jpg" alt=""
-                                class="testimonial-picture">
-                            <div class="testimonial-owner">
-                                <p class="testimonial-name">Mayak Agarwal</p>
-                                <p class="testimonial-subtilte">Aspiring - computer science</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="student-data-wrapper" id="student-section-student-3">
-                    <!-- Ananya shah -->
-                    <h2 class="inner-heading">Ananya shah</h2>
-                    <p class="inner-text">Aspiring - Medicine/psychiatrist <br>
-                        Passions - Mental health </p>
-                    <h2 class="inner-heading">What we did</h2>
-                    <h4 class="inner-subheading">Ivy Project</h4>
-                    <p class="inner-text">
-                        Art Therapy training with nurtureinc psychologist mentor <br>
-                        Research paper on Digital art therapy: <br>
-                        Exploring the use of technology in therapeutic practice <br>
-                        Developed digital art therapy app with nurtureinc tech team
-
-                    </p>
-                    <div style="height: 20px;"></div>
-                    <h4 class="inner-subheading">Community Service</h4>
-                    <p class="inner-text">Hosted OTC medicine awareness workshops <br>
-                        for the under-privilege community</p>
-                    <div class="inner-testimonial">
-                        <p class="testimonial-quote">“Nurtureinc was the true relief to my parents
-                            and I needed. Their roadmap which was planned
-                            to the exact week was so nerve-calming
-                            and helped me plan my APs, SATs
-                            and extracurriculars without it seeming so daunting.
-                            I love how personalised their approach is.
-                            Everyone had unique projects and application journeys.”</p>
-                        <div class="testimonial-flex">
-                            <img src="https://nurtureinc.org/wp-content/uploads/2019/09/team7.jpg" alt=""
-                                class="testimonial-picture">
-                            <div class="testimonial-owner">
-                                <p class="testimonial-name">Ananya shah</p>
-                                <p class="testimonial-subtilte">Aspiring Medicine/psychiatrist</p>
-                            </div>
+    <div class="inner-row">
+        <div class="col1">
+            <div class="student-data-wrapper" id="student-section-student-1">
+                <!-- diva gandhi text -->
+                <h2 class="inner-heading name-heading">Diva Gandhi</h2>
+                <p class="inner-text">Aspiring - Business <br>
+                    Passions - Weight lifting and mental health</p>
+                <h2 class="inner-heading ">What we did</h2>
+                <h4 class="inner-subheading">Ivy Project</h4>
+                <p class="inner-text"> Launched her own protein brand for women <br> Launched a wellness retreat
+                    venture
+                    for corporates</p>
+                <div style="height: 20px;"></div>
+                <h4 class="inner-subheading">Community Service</h4>
+                <p class="inner-text">Stronger Together Against Bullying<br>
+                    Launched an anti-bullying campaign <br>
+                    that emphasizes building strength, both physical and<br>
+                    emotional</p>
+                <div class="inner-testimonial">
+                    <p class="testimonial-quote">“I never knew my passions could be
+                        transformed into actual businesses
+                        and initiatives. My business mentor taught
+                        me real-life business skills which not only
+                        built my profile for uni but fulfilled my
+                        Dream of running a business as a high school <br>Student.”</p>
+                    <div class="testimonial-flex">
+                        <img src="https://nurtureinc.org/wp-content/uploads/2019/09/team7.jpg" alt=""
+                            class="testimonial-picture">
+                        <div class="testimonial-owner">
+                            <h5 class="testimonial-name">Diva Gandhi</h5>
+                            <h5 class="testimonial-subtilte">Aspiring Business</h5>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col2">
-                <img src="https://nurtureinc.org/wp-content/uploads/2024/01/Artboard-60-copy-4@3x.png"
-                    class="student-image">
+            <div class="student-data-wrapper" id="student-section-student-2">
+                <!-- mayank aggarwal -->
+                <h2 class="inner-heading">Mayak Agarwal </h2>
+                <p class="inner-text">Aspiring - computer science
+                    <br>
+                    Passions - chess and pottery
+                </p>
+                <h2 class="inner-heading">What we did</h2>
+                <h4 class="inner-subheading">University project</h4>
+                <p class="inner-text"> Learned ML from nurtureinc Microsoft mentor
+                    <br> Developed AI-Powered Chess Tutor with the mentor
+                </p>
+                <div style="height: 20px;"></div>
+                <h4 class="inner-subheading">Community Service</h4>
+                <p class="inner-text">Clay to Craft <br>
+                    Taught underprivileged children artisanal pottery
+                    <br>
+                    to set up local stalls and make money
+                </p>
+                <div class="inner-testimonial">
+                    <p class="testimonial-quote">“I went to multiple consultants before nurtureinc and all of
+                        them told me they would do stellar essays and
+                        applications for me but I wasn’t sure
+                        what would they even put on it because I didn’t
+                        have any achievements or experiences?
+                        that’s when I found nurtureinc and I realised
+                        I needed exposure and skills, not someone to fill
+                        the application form. I wish I had joined earlier.”</p>
+                    <div class="testimonial-flex">
+                        <img src="https://nurtureinc.org/wp-content/uploads/2019/09/team7.jpg" alt=""
+                            class="testimonial-picture">
+                        <div class="testimonial-owner">
+                            <h5 class="testimonial-name">Mayak Agarwal</h5>
+                            <h5 class="testimonial-subtilte">Aspiring - computer science</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="student-data-wrapper" id="student-section-student-3">
+                <!-- Ananya shah -->
+                <h2 class="inner-heading">Ananya shah</h2>
+                <p class="inner-text">Aspiring - Medicine/psychiatrist <br>
+                    Passions - Mental health </p>
+                <h2 class="inner-heading">What we did</h2>
+                <h4 class="inner-subheading">Ivy Project</h4>
+                <p class="inner-text">
+                    Art Therapy training with nurtureinc psychologist mentor <br>
+                    Research paper on Digital art therapy: <br>
+                    Exploring the use of technology in therapeutic practice <br>
+                    Developed digital art therapy app with nurtureinc tech team
+
+                </p>
+                <div style="height: 20px;"></div>
+                <h4 class="inner-subheading">Community Service</h4>
+                <p class="inner-text">Hosted OTC medicine awareness workshops <br>
+                    for the under-privilege community</p>
+                <div class="inner-testimonial">
+                    <p class="testimonial-quote">“Nurtureinc was the true relief to my parents
+                        and I needed. Their roadmap which was planned
+                        to the exact week was so nerve-calming
+                        and helped me plan my APs, SATs
+                        and extracurriculars without it seeming so daunting.
+                        I love how personalised their approach is.
+                        Everyone had unique projects and application journeys.”</p>
+                    <div class="testimonial-flex">
+                        <img src="https://nurtureinc.org/wp-content/uploads/2019/09/team7.jpg" alt=""
+                            class="testimonial-picture">
+                        <div class="testimonial-owner">
+                            <h5 class="testimonial-name">Ananya shah</h5>
+                            <h5 class="testimonial-subtilte">Aspiring Medicine/psychiatrist</h5>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+        <div class="col2">
+            <img src="https://nurtureinc.org/wp-content/uploads/2024/01/Artboard-52@3x.jpg"
+                class="student-image">
+        </div>
+    </div>
+</section>
     <div style="height: 50vh;"></div>
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
@@ -279,7 +276,7 @@
         var student1Offset = $('#student-section-student-1').offset().top - 200;
         var student2Offset = $('#student-section-student-2').offset().top - 300;
         var student3Offset = $('#student-section-student-3').offset().top - 300;
-        studentImages = ['https://nurtureinc.org/wp-content/uploads/2024/01/Artboard-60-copy-4@3x.png', 'https://nurtureinc.org/wp-content/uploads/2024/01/Artboard-60-copy-5@3x.png', 'https://nurtureinc.org/wp-content/uploads/2024/01/Artboard-60-copy-6@3x.png'];
+        studentImages = ['https://nurtureinc.org/wp-content/uploads/2024/01/Artboard-52@3x.jpg', 'https://nurtureinc.org/wp-content/uploads/2024/01/Artboard-60-copy-5@3x.jpg', 'https://nurtureinc.org/wp-content/uploads/2024/01/Artboard-60-copy-6@3x.jpg'];
 
         $(window).scroll(function () {
             var scrollPosition = $(this).scrollTop();
@@ -293,6 +290,10 @@
                 $('.student-image').attr('src', studentImages[2]);
             }
         });
+
+        if (window.innerWidth<1000){
+            $('body')[0].innerHTML = "<H1>Please view this on a larger screen</H1>";
+        }
     </script>
 </body>
 
