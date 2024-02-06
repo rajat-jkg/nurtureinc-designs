@@ -1,6 +1,6 @@
 /*  border color rgb(211,211,211) */
 /* accent color: rgb(11, 109, 189) */
-body, head, html{
+body{
     zoom: 1.05;
 }
 .form-main-container{
@@ -194,4 +194,29 @@ button.blue-outline img{
 
 .phone-input #phone-number, .phone-input #alternate-phone-number{
     max-width: 15rem;
+}
+
+
+
+/* mobile design */
+
+@media screen and (max-width: 600px) {
+    body{
+        zoom: 1;
+    }
+    .form-main-container{
+        padding: 0 0.5rem;
+    }
+    .form-subcontainer{
+        padding: 1rem;
+    }
+    .form-questions{
+        padding: 1rem;
+    }
+    .button-row{
+        gap: 0.5rem;
+    }
+    button.blue-outline{
+        padding: 0.5rem 1rem;
+    }
 }
