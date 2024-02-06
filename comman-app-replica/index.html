@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comman app form replica</title>
+    <link href='https://fonts.googleapis.com/css?family=Figtree' rel='stylesheet'>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <section class="form-main-container">
+        <section class="form-subcontainer">
+            <div class="form-section-heading-wrapper">
+                <h1 class="form-section-heading">Profile</h1>
+            </div>
+            <div class="form-subsection">
+                <div class="subsection-heading">
+                    <p>Personal information</p>
+                </div>
+                <div class="form-questions">
+                    <div class="form-question">
+                        <p>Legal first/given name<span class="red-star">*</span></p>
+                        <input type="text" name="first-name" id="first-name">
+                    </div>
+                    <div class="form-question">
+                        <p>Would you like to share a different first name that people call you?</p>
+                        <div class="radio-options"><input type="radio" name="different-name" value="Yes"
+                                id="fname-yes"><label for="fname-yes">Yes</label></div>
+                        <div class="radio-options"><input type="radio" name="different-name" value="No"
+                                id="fname-no"><label for="fname-no">No</label></div>
+                    </div>
+
+                    <button class="clear-answer">clear answer</button>
+                    <div class="form-question">
+                        <p>My first name<span class="red-star">*</span></p>
+                        <input type="text" name="preffered-first-name" id="preffered-first-name">
+                        <span class="hint">
+                            You can update how we use this name in your communication preferences.</span>
+                    </div>
+                    <div class="form-question">
+                        <p>Middle Name</p>
+                        <input type="text" name="middle-name" id="middle-name">
+                    </div>
+                    <div class="form-question">
+                        <p>Last/Family/Surname<span class="red-star">*</span></p>
+                        <input type="text" name="Last-name" id="last-name">
+                    </div>
+
+                    <div class="form-question">
+                        <p>Suffix</p>
+                        <input type="text" name="name-suffix" id="name-suffix">
+                    </div>
+                    <div class="form-question">
+                        <p>Do you have any materials under a former legal name?<span class="red-star">*</span></p>
+                        <div class="radio-options"><input type="radio" name="former-name" value="Yes"
+                                id="former-name-yes"><label for="former-name-yes">Yes</label></div>
+                        <div class="radio-options"><input type="radio" name="former-name" value="No"
+                                id="former-name-no"><label for="former-name-no">No</label></div>
+                        <span class="hint">For example, a maiden name.</span>
+                    </div>
+                    <button class="clear-answer">clear answer</button>
+                    <div class="form-question">
+                        <p>Former first name</p>
+                        <input type="text" name="former-first-name" id="former-first-name">
+                    </div>
+                    <div class="form-question">
+                        <p>Former middle name</p>
+                        <input type="text" name="former-middle-name" id="former-middle-name">
+                    </div>
+                    <div class="form-question">
+                        <p>Former last name</p>
+                        <input type="text" name="former-last-name" id="former-last-name">
+                    </div>
+                    <div class="form-question">
+                        <p>Date of birth<span class="red-star">*</span></p>
+                        <input type="text" name="date-of-birth" id="date-of-birth">
+                        <span class="hint">Date uses "month day, year" format (e.g. August 1, 2002)</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-subsection">
+                <div class="subsection-heading">
+                    <p>Address</p>
+                </div>
+                <div class="form-questions">
+                    <div class="form-question">
+                        <p><span class="small-label-text">Permanent home address<span class="red-star">*</span></span>
+                        </p>
+                        <p style="font-size: 1rem;"><i> 1
+                                Dhankawadi<br>
+                                PUNE 411043<br>
+                                India <br> </i>
+                        </p>
+                        <div class="button-row">
+                            <button class="blue-outline">
+                                <img src="assets/sync-icon.png" alt="edit icon"> Change
+                            </button>
+                            <button class="blue-outline">
+                                <img src="assets/cross.png" alt="cross icon"> Remove
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div class="form-question">
+                        <p><span class="small-label-text">Alternate mailing address (e.g. if you attend a boarding
+                                school or use a different mailing address)<span class="red-star">*</span></span>
+                        </p>
+
+                        <div class="radio-options"><input type="radio" name="mailing-address" value="No"
+                                id="mailing-address-no"><label for="mailing-address-no"> No alternate address </label>
+                        </div>
+                        <div class="radio-options"><input type="radio" name="mailing-address" value="Yes"
+                                id="mailing-address-yes"><label for="mailing-address-yes"> Send mail to a temporary or
+                                alternate address </label></div>
+
+                    </div>
+                    <button class="clear-answer">clear answer</button>
+                    <p> <span class="small-label-text">Current/mailing address<span class="red-star">*</span></span></p>
+                    <div class="form-question">
+                        <p style="font-size: 1rem;"><i> Sandila <br>
+                                SANDILA 241204 <br>
+                                India </i><span class="red-star">*</span></p>
+
+                    </div>
+                    <div class="form-question">
+                        <p>Is this a temporary address?<span class="red-star">*</span></p>
+                        <div class="radio-options"><input type="radio" name="temporary-address" value="Yes"
+                                id="temporary-address-yes"><label for="temporary-address-yes">Yes</label></div>
+                        <div class="radio-options"><input type="radio" name="temporary-address" value="No"> <label
+                                for="temporary-address-no">No</label></div>
+                    </div>
+                    <button class="clear-answer">clear answer</button>
+
+                </div>
+            </div>
+            <div class="form-subsection">
+                <div class="subsection-heading">
+                    <p>Contact Details</p>
+                </div>
+                <div class="form-questions">
+                    <div class="form-question">
+                        <p>Primary Phone<span class="red-star">*</span></p>
+                        <div class="radio-options"><input type="radio" name="phone-type" value="Home" id="home"><label
+                                for="home"> Home</label></div>
+                        <div class="radio-options"><input type="radio" name="phone-type" value="Mobile" id="mobile"><label
+                                for="mobile"> Mobile</label></div>
+                    </div>
+                    <button class="clear-answer">clear answer</button>
+                    <div class="form-question">
+                        <p>Preferred phone number<span class="red-star">*</span></p>
+                        <div class="phone-input">
+                            <input type="text" name="country-code" id="country-code"> <input type="text" name="phone-number" id="phone-number">
+                        </div>
+                        <span class="hint">Phone includes country code and number.</span>
+                    </div>
+                    <div class="form-question">
+                        <p>Alternate Phone<span class="red-star">*</span></p>
+                        <div class="radio-options"><input type="radio" name="alternate-phone" value="No" id="no-alternate"><label
+                                for="no-alternate"> No alternate telephone</label></div>
+                        <div class="radio-options"><input type="radio" name="alternate-phone" value="Home" id="home-alternate"><label
+                                for="home-alternate"> Home</label></div>
+                        <div class="radio-options"><input type="radio" name="alternate-phone" value="Mobile" id="mobile-alternale"><label
+                                for="mobile-alternale"> Mobile</label></div>
+                    </div>
+                    <button class="clear-answer">clear answer</button>
+                    <div class="form-question">
+                        <p>Alternate phone number<span class="red-star">*</span></p>
+                        <div class="phone-input">
+                            <input type="text" name="alternate-country-code" id="alternate-country-code"> <input type="text" name="alternate-phone-number" id="alternate-phone-number">
+                        </div>
+                        <span class="hint">Phone includes country code and number.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-subsection">
+                <div class="subsection-heading">
+                    <p>Demographics</p>
+                </div>
+                <div class="form-questions">
+                    <div class="form-question">
+                        <p>Gender</p>
+                        <div class="checkbox-options"><input type="checkbox" name="Gender" id="Female"> <label for="Female">Female</label></div>
+                        <div class="checkbox-options"><input type="checkbox" name="Gender" id="Male"> <label for="Male">Male</label></div>
+                        <div class="checkbox-options"><input type="checkbox" name="Gender" id="non-binary"> <label for="non-binary">Non Binary</label></div>
+                        <div class="checkbox-options"><input type="checkbox" name="Gender" id="other"> <label for="other">Add another gender</label></div>
+                    </div>
+                    <div class="form-question">
+                        <p>Legal sex<span class="red-star">*</span></p>
+                        <div class="radio-options"><input type="radio" name="legal-sex" id="legal-female" value="Female"> <label for="legal-female">Female</label></div>
+                        <div class="radio-options"><input type="radio" name="legal-sex" id="legal-male" value="male" > <label for="legal-male">Male</label></div>
+                        <div class="radio-options"><input type="radio" name="legal-sex" id="legal-x" value="x"> <label for="legal-x">X or another legal sex</label></div>
+                    </div>
+                    <button class="clear-answer">clear answer</button>
+                    <div class="form-question">
+                        <p>Pronouns<span class="red-star">*</span></p>
+                        <div class="checkbox-options"><input type="checkbox" name="pronouns" id="he-him" value="he-him"> <label for="he-him">He/Him</label></div>
+                        <div class="checkbox-options"><input type="checkbox" name="pronouns" id="she-her" value="she-her"> <label for="she-her">She/Her</label></div>
+                        <div class="checkbox-options"><input type="checkbox" name="pronouns" id="they-them" value="they-them"> <label for="they-them">They/Them</label></div>
+                        <div class="checkbox-options"><input type="checkbox" name="pronouns" id="other-pronouns" value="other"> <label for="other-pronouns">Add another pronoun</label></div>
+                    </div>
+                    <div class="form-question">
+                        <p>My pronouns <span class="red-star">*</span></p>
+                        <input type="text" name="other-pronouns" id="other-pronouns">
+                    </div>
+
+                    
+                    <div class="form-question">
+                        <p>U.S. Armed Forces status</p>
+                        <div class="radio-options"><input type="radio" name="armed-forces-status" id="none" value="none"> <label for="none">None</label></div>
+                        <div class="radio-options"><input type="radio" name="armed-forces-status" id="currently-serving" value="currently-serving"> <label for="currently-serving">Currently serving</label></div>
+                        <div class="radio-options"><input type="radio" name="armed-forces-status" id="previously-served" value="previously-served"> <label for="previously-served">Previously served</label></div>
+                        <div class="radio-options"><input type="radio" name="armed-forces-status" id="current-dependent" value="current-dependent"> <label for="current-dependent">Current dependent</label></div>
+                    </div>
+                    <button class="clear-answer">clear answer</button>
+                    <div class="form-question">
+                        <p>Are you Hispanic or Latino/a/x?<span class="red-star">*</span></p>
+                        <div class="radio-options"><input type="radio" name="hispanic-latino" id="hispanic-latino-yes" value="Yes"> <label for="hispanic-latino-yes">Yes</label></div>
+                        <div class="radio-options"><input type="radio" name="hispanic-latino" id="hispanic-latino-no" value="No"> <label for="hispanic-latino-no">No</label></div>
+                    </div>
+                    <button class="clear-answer">clear answer</button>
+                   
+                    <div class="form-question">
+                        <p>Regardless of your answer to the prior question, please indicate how you identify yourself. (You may select one or more)<span class="red-star">*</span></p>
+                        <div class="checkbox-options"><input type="checkbox" name="identify" id="american-indian" value="american-indian"> <label for="american-indian">American Indian or Alaska Native</label></div>
+                        <div class="checkbox-options"><input type="checkbox" name="identify" id="asian" value="asian"> <label for="asian">Asian</label></div>
+                        <div class="checkbox-options"><input type="checkbox" name="identify" id="black" value="black"> <label for="black">Black or African American</label></div>
+                        <div class="checkbox-options"><input type="checkbox" name="identify" id="hawaiian" value="hawaiian"> <label for="hawaiian">Native Hawaiian or Other Pacific Islander</label></div>
+                        <div class="checkbox-options"><input type="checkbox" name="identify" id="white" value="white"> <label for="white">White</label></div>
+                    </div>  
+                    
+
+                </div>
+                
+            </div>
+        </section>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,197 @@
+/*  border color rgb(211,211,211) */
+/* accent color: rgb(11, 109, 189) */
+body, head, html{
+    zoom: 1.05;
+}
+.form-main-container{
+    max-width: 700px;
+    margin: 0px auto;
+    padding: 0;
+}
+
+.form-subcontainer{
+    margin: 50px 0px;
+    padding: 2rem;
+    background-color: white;
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 4px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+label, span {
+    font-family: 'Figtree', sans-serif;
+}
+
+
+.form-section-heading-wrapper {
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgb(211, 211, 211);
+    margin-bottom: 1rem;
+}
+
+.form-section-heading {
+    font-size: 1.75rem;
+    font-weight: 400;
+}
+
+.form-subsection {
+    border: solid 1px rgb(183, 183, 183);
+}
+
+.subsection-heading {
+    padding: 0.25em 0.75em;
+    font-size: 0.875rem;
+    color: white;
+    font-weight: 400;
+    background-color: rgb(11, 109, 189);
+}
+
+
+.form-questions {
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+}
+
+.form-questions p {
+    margin-top: 0;
+    margin-bottom: 0.25rem;
+    font-size: 0.878rem;
+}
+
+.form-questions label {
+    margin: 0 5px;
+    font-size: 1rem;
+}
+.form-question{
+    margin-bottom: 2rem;
+}
+
+.form-questions input[type="text"],
+.form-questions input[type="email"],
+.form-questions input[type="number"],
+.form-questions input[type="tel"],
+.form-questions input[type="date"],
+.form-questions select,
+.form-questions textarea {
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    min-height: 22px;
+    padding: 14px 12px;
+    font-size: 1rem;
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 4px;
+}
+
+.red-star {
+    color: red;
+}
+
+input[type='radio']:after {
+    width: 10px;
+    height: 10px;
+    padding: 2px;
+    border-radius: 14px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: white;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid rgb(211, 211, 211);
+}
+
+input[type='radio']:checked:after {
+    background-color: #555;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid rgb(211, 211, 211);
+}
+
+
+.radio-options{
+    margin-left: 0.5rem;
+    margin-bottom: 0.75rem;
+    margin-top: 0.75rem;
+}
+
+.radio-options label:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.checkbox-options label:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.form-questions .hint{
+    font-size: 0.75rem;
+}
+
+.clear-answer{
+    
+    font-size: 0.875rem;
+    padding: 0.5rem 1.25rem;
+    border: 2px solid #959595;
+    color: #959595;
+    background-color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+    margin-top: -1rem;
+}
+
+.small-label-text{
+    font-size: 0.875rem;
+}
+
+button.blue-outline{
+    padding: 0.75rem 1.25rem;
+    border: 2px solid rgb(11, 109, 189);
+    color: rgb(11, 109, 189);
+    background-color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    
+}
+
+button.blue-outline img{
+    width: 17px;
+    height: 17px;
+    margin-right: 0.5rem;
+}
+
+.button-row{
+    display: flex;
+    justify-content: start;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.phone-input{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.phone-input #country-code, .phone-input #alternate-country-code{
+    width: 5rem;
+}
+
+.phone-input #phone-number, .phone-input #alternate-phone-number{
+    max-width: 15rem;
+}
