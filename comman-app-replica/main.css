@@ -3,6 +3,8 @@
 body{
     zoom: 1.05;
 }
+
+
 .form-main-container{
     max-width: 700px;
     margin: 0px auto;
@@ -18,6 +20,9 @@ body{
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 }
 
+
+
+/* for font family */
 h1,
 h2,
 h3,
@@ -29,22 +34,23 @@ label, span {
     font-family: 'Figtree', sans-serif;
 }
 
-
+/* main heading */
 .form-section-heading-wrapper {
     padding-bottom: 0.5rem;
     border-bottom: 1px solid rgb(211, 211, 211);
     margin-bottom: 1rem;
 }
-
 .form-section-heading {
     font-size: 1.75rem;
     font-weight: 400;
 }
 
+
 .form-subsection {
     border: solid 1px rgb(183, 183, 183);
 }
 
+/* subheading with blue background */
 .subsection-heading {
     padding: 0.25em 0.75em;
     font-size: 0.875rem;
@@ -53,7 +59,7 @@ label, span {
     background-color: rgb(11, 109, 189);
 }
 
-
+/*container for questions of a subsection */
 .form-questions {
     padding: 1rem 2rem;
     margin-top: 1rem;
@@ -64,15 +70,24 @@ label, span {
     margin-bottom: 0.25rem;
     font-size: 0.878rem;
 }
-
 .form-questions label {
     margin: 0 5px;
     font-size: 1rem;
 }
+.form-questions .hint{
+    font-size: 0.75rem;
+}
+/* class for required questions mark */
+.red-star {
+    color: red;
+}
+/* individual question */
 .form-question{
     margin-bottom: 2rem;
 }
 
+
+/* style for inputs */
 .form-questions input[type="text"],
 .form-questions input[type="email"],
 .form-questions input[type="number"],
@@ -91,10 +106,7 @@ label, span {
     border-radius: 4px;
 }
 
-.red-star {
-    color: red;
-}
-
+/* radio button style */
 input[type='radio']:after {
     width: 10px;
     height: 10px;
@@ -109,7 +121,6 @@ input[type='radio']:after {
     visibility: visible;
     border: 2px solid rgb(211, 211, 211);
 }
-
 input[type='radio']:checked:after {
     background-color: #555;
     content: '';
@@ -117,30 +128,24 @@ input[type='radio']:checked:after {
     visibility: visible;
     border: 2px solid rgb(211, 211, 211);
 }
-
-
 .radio-options{
     margin-left: 0.5rem;
     margin-bottom: 0.75rem;
     margin-top: 0.75rem;
 }
-
 .radio-options label:hover{
     text-decoration: underline;
     cursor: pointer;
 }
 
+/* checkbox style */
 .checkbox-options label:hover{
     text-decoration: underline;
     cursor: pointer;
 }
 
-.form-questions .hint{
-    font-size: 0.75rem;
-}
-
+/* clear answer button */
 .clear-answer{
-    
     font-size: 0.875rem;
     padding: 0.5rem 1.25rem;
     border: 2px solid #959595;
@@ -152,10 +157,13 @@ input[type='radio']:checked:after {
     margin-top: -1rem;
 }
 
+/* small label text */
 .small-label-text{
     font-size: 0.875rem;
 }
 
+
+/* blue ouline button */
 button.blue-outline{
     padding: 0.75rem 1.25rem;
     border: 2px solid rgb(11, 109, 189);
@@ -170,6 +178,7 @@ button.blue-outline{
     
 }
 
+/* inner icon for button */
 button.blue-outline img{
     width: 17px;
     height: 17px;

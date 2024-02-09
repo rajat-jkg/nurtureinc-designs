@@ -1,0 +1,43 @@
+.details_form {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.student_details_input {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.student_details_input:focus {
+    outline: none;
+}
+
+.details_form .input_wrapper {
+    border: #ccc 1px solid;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.student_details_input::placeholder {
+    color: #ccc;
+}
+
+.student_details_input[type="submit"] {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.student_details_input[type="submit"]:hover {
+    background-color: #000;
+}
+

@@ -1,0 +1,74 @@
+.open-app-replica {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.student_details_input {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.student_details_input:focus {
+    outline: none;
+}
+
+.open-app-replica .input_wrapper {
+    border: #ccc 1px solid;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.student_details_input::placeholder {
+    color: #ccc;
+}
+
+.student_details_input[type="submit"] {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.student_details_input[type="submit"]:hover {
+    background-color: #000;
+}
+
+.section-heding {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.red_star {
+    color: red;
+}
+
+.dropdown {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+
+}
+
+.print_button {
+    margin: 20px auto;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.print_button:hover {
+    background-color: #000;
+}
